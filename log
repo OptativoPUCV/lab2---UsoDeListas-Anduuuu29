@@ -1,0 +1,33 @@
+Wed 20 Mar 2024 05:09:51 PM UTC: 
+ exercises.c | 5 +++++
+ 1 file changed, 5 insertions(+)
+In file included from test.c:5:
+exercises.c: In function ‘crea_lista’:
+exercises.c:46:8: error: ‘i’ undeclared (first use in this function)
+   46 |    for(i = 1; i <= 10; i++)
+      |        ^
+exercises.c:46:8: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:49:18: error: expected expression before ‘List’
+   49 |         pushBack(List *L, void *dato)
+      |                  ^~~~
+exercises.c:49:9: error: too few arguments to function ‘pushBack’
+   49 |         pushBack(List *L, void *dato)
+      |         ^~~~~~~~
+In file included from exercises.c:6,
+                 from test.c:5:
+arraylist.h:20:6: note: declared here
+   20 | void pushBack(List *L, void *dato);
+      |      ^~~~~~~~
+In file included from test.c:5:
+exercises.c:49:38: error: expected ‘;’ before ‘}’ token
+   49 |         pushBack(List *L, void *dato)
+      |                                      ^
+      |                                      ;
+   50 |      }
+      |      ~                                
+exercises.c:48:13: error: unused variable ‘dato’ [-Werror=unused-variable]
+   48 |        int *dato =(int*)malloc(sizeof(int));
+      |             ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+0979b5b
