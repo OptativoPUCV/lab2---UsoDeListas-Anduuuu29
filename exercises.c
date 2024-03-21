@@ -132,7 +132,7 @@ int parentesisBalanceados(char *cadena)
       else
       {
         if(cadena[i] == ')')
-        {pero
+        {
           if(strcmp(top(P1), "(") == 0)
             pop(P1);
           else
