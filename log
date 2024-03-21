@@ -479,3 +479,38 @@ exercises.c:156:3: error: control reaches end of non-void function [-Werror=retu
 cc1: all warnings being treated as errors
 Compilation failed
 8db9d0e
+Thu 21 Mar 2024 07:07:14 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:135:10: error: ‘pero’ undeclared (first use in this function)
+  135 |         {pero
+      |          ^~~~
+exercises.c:135:10: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:135:14: error: expected ‘;’ before ‘if’
+  135 |         {pero
+      |              ^
+      |              ;
+  136 |           if(strcmp(top(P1), "(") == 0)
+      |           ~~  
+exercises.c:138:11: error: expected ‘}’ before ‘else’
+  138 |           else
+      |           ^~~~
+exercises.c:141:9: error: ‘else’ without a previous ‘if’
+  141 |         else if(cadena[i] == ']')
+      |         ^~~~
+exercises.c: At top level:
+exercises.c:157:3: error: expected identifier or ‘(’ before ‘return’
+  157 |   return 1;
+      |   ^~~~~~
+exercises.c:158:1: error: expected identifier or ‘(’ before ‘}’ token
+  158 | }
+      | ^
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:156:3: error: control reaches end of non-void function [-Werror=return-type]
+  156 |   }
+      |   ^
+cc1: all warnings being treated as errors
+Compilation failed
+2182e1b
