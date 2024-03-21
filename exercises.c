@@ -122,20 +122,26 @@ int parentesisBalanceados(char *cadena) {
         {
           if(strcmp(top(P1), "(") == 0)
             pop(P1);
+          else
+            return 0;
         }
         else if(cadena[i] == ']')
         {
           if(strcmp(top(P1), "[") == 0)
             pop(P1);
+          else
+            return 0;
         }
         else if(cadena[i] == '}')
         {
           if(strcmp(top(P1), "{") == 0)
             pop(P1);
+          else
+            return 0;
         }
       }
     }
   
-   return 0;
+   return 1;
 }
 
