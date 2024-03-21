@@ -133,12 +133,12 @@ int parentesisBalanceados(char *cadena) {
           if(strcmp(top(P1), "{") == 0)
             pop(P1);
         }
-        else
+        else if(top(P1) == NULL)
         {
-          return 0;
+          return 1;
         }
       }
     }
-   return 1;
+   return 0;
 }
 
