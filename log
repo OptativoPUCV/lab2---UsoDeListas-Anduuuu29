@@ -132,3 +132,17 @@ Wed 20 Mar 2024 05:25:17 PM UTC:
  tests:  3|2
 total_score: 40/70
 fffa7ec
+Thu 21 Mar 2024 06:28:49 PM UTC: 
+ exercises.c | 35 +++++++++++++++++++++++++++++++++++
+ 1 file changed, 35 insertions(+)
+In file included from test.c:5:
+exercises.c: In function ‘copia_pila’:
+exercises.c:99:9: error: unused variable ‘dato’ [-Werror=unused-variable]
+   99 |   void* dato;
+      |         ^~~~
+exercises.c:98:10: error: unused variable ‘P3’ [-Werror=unused-variable]
+   98 |   Stack* P3 = create_stack();
+      |          ^~
+cc1: all warnings being treated as errors
+Compilation failed
+a1459f4
